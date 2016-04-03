@@ -640,7 +640,7 @@ SOCIAL ICON
     background: url(../images/video-bg.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-    min-height: 500px;
+    min-height: 700px;
 }
 
 .video-intro {
@@ -662,7 +662,7 @@ SOCIAL ICON
     width: 70px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
+    font-size: 36px;
     border: 1px solid #fff;
 }
 .video-intro a:hover {
@@ -673,6 +673,7 @@ SOCIAL ICON
 
 .video-intro h2 {
     margin-top: 30px;
+    font-size: 36px;
     text-transform: uppercase;
 }
 
@@ -889,6 +890,41 @@ Resume Timeline
 .timeline>li .timeline-content:hover {
     background: #68c3a3;
     color: #fff;
+}
+
+.timeline>li .timeline-content-nus:hover {
+    position: relative;
+    background: url(../../assets/images/nus.png) bottom center no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.timeline>li .timeline-content-microsoft:hover {
+    position: relative;
+    background: url(../../assets/images/microsoft.jpg) bottom center no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.timeline>li .timeline-content-dav:hover {
+    position: relative;
+    background: url(../../assets/images/dav.jpg) bottom center no-repeat #79FDFF;
+    background-size: contain;
+    color: transparent;
+}
+
+.timeline>li .timeline-content-goldman:hover {
+    position: relative;
+    background: url(../../assets/images/goldman.jpg) bottom center no-repeat #6987B9;
+    background-size: contain;
+    color: transparent;
+}
+
+.timeline>li .timeline-content-merrill:hover {
+    position: relative;
+    background: url(../../assets/images/merrill.png) bottom center no-repeat;
+    background-size: contain;
+    color: transparent;
 }
 
 .timeline>li .timeline-panel::before,
