@@ -34,9 +34,6 @@ jQuery(function ($) {
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
 
-
-
-
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
@@ -50,9 +47,11 @@ jQuery(function ($) {
             e.preventDefault();
         });
     }());
-
-
-
+    
+    $('#mapdiv').load(function() {
+         document.querySelectorAll('a[title="Interactive JavaScript maps"]')[0].style.visibility='hidden';   
+      });
+      
     // -------------------------------------------------------------
     // Full Screen Slider
     // -------------------------------------------------------------
