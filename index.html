@@ -602,12 +602,102 @@
       <div class="container">
         <h2 class="section-title wow fadeInUp">Countries Visited</h2>
 
+        <div class="resizable">
+			<div id="mapdiv" style="width: 100%; height: 100%;"></div>
+		</div>
+      </div><!-- /.container -->
+    </section><!-- End Blog Section -->
+    <!-- Hire Section -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="hire-section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>I'm always free for a cuppa coffee</h2>
+              <a href="#contact" class="btn btn-default">Let's meet</a>
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.hire-section-bg -->
+    </section><!-- End Hire Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Get in touch</h2>
+
         <div class="row">
-          <div class="col-sm-4" style="padding-left: 100px">
+          <div class="col-md-6">
+            <div class="contact-form">
+              <strong>Send me a message</strong>
+              <form name="contact-form" id="contactForm" method="POST">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="_replyto" class="form-control" id="email" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
+                </div>
+
+                <button id="sendMessage" type="submit" name="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div><!-- /.contact-form -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="row center-xs">
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Location</strong>
+                  Dublin, Ireland<br>
+                </address>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-map">
+                <div id="mapCanvas" class="map-canvas"></div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Contact Section -->
+
+
+	<!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer Section -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+
 				<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
 				<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
 				<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-				<div id="mapdiv" style="width: 1000px; height: 450px;"></div>
+				<script src="../responsive.min.js"></script>
 				<script type="text/javascript">
 				var map = AmCharts.makeChart("mapdiv",{
 				type: "map",
@@ -618,6 +708,9 @@
 				backgroundAlpha : 1,
 				zoomControl: {
 				zoomControlEnabled : true
+				},
+				responsive: {
+    					enabled: true
 				},
 				dataProvider : {
 				map : "worldHigh",
@@ -716,99 +809,8 @@
 				rollOverOutlineColor : "#000000"
 				}
 				});
-				</script>
-
-          </div><!-- /.col-md-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- End Blog Section -->
-    <!-- Hire Section -->
-    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-      <div class="hire-section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2>I'm always free for a cuppa coffee</h2>
-              <a href="#contact" class="btn btn-default">Let's meet</a>
-            </div><!-- /.col-md-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.hire-section-bg -->
-    </section><!-- End Hire Section -->
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp">Get in touch</h2>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="contact-form">
-              <strong>Send me a message</strong>
-              <form name="contact-form" id="contactForm" method="POST">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="_replyto" class="form-control" id="email" required="">
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
-                </div>
-
-                <button id="sendMessage" type="submit" name="submit" class="btn btn-primary">Send Message</button>
-              </form>
-            </div><!-- /.contact-form -->
-          </div><!-- /.col-md-6 -->
-
-          <div class="col-md-6">
-            <div class="row center-xs">
-              <div class="col-sm-6">
-                <i class="fa fa-map-marker"></i>
-                <address>
-                  <strong>Location</strong>
-                  Dublin, Ireland<br>
-                </address>
-              </div>
-            </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="location-map">
-                <div id="mapCanvas" class="map-canvas"></div>
-              </div>
-            </div>
-          </div>
-
-          </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- End Contact Section -->
-
-
-	<!-- Footer Section -->
-    <footer class="footer-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-          </div>
-        </div>
-      </div>
-    </footer><!-- End Footer Section -->
-
-
-	<!-- Scroll-up -->
-	<div class="scroll-up">
-		<a href="#home"><i class="fa fa-angle-up"></i></a>
-	</div>
-
+	</script>
+				
 	<!-- Javascript files -->
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>

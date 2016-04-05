@@ -181,7 +181,12 @@ h6 {
     border-radius: 4px;
 }
 
-
+.resizable {
+   display: block;
+   height: 800px;
+   height: 700px;
+ }
+ 
 /*btn-primary*/
 .btn-primary{
     background-color:#68c3a3;
