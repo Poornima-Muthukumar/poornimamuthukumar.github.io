@@ -1,12 +1,4 @@
 /*
-    Author: TrendyTheme
-    Template: I AM X
-    Version: 1.2
-    URL: http://demo.trendytheme.net/iamx/html
-*/
-
-
-/*
 ====================================
 ------------------------------------
     1. General
@@ -189,9 +181,6 @@ h6 {
     border-radius: 4px;
 }
 
-[title^='Interactive JavaScript maps'], [title*=' Interactive JavaScript maps']{
-    display: none;
-}
 
 /*btn-primary*/
 .btn-primary{
@@ -1549,14 +1538,6 @@ Icon for all respective meta
     height: 350px;
 }
 
-<<<<<<< HEAD
-=======
-.resizable {
-  display: block;
-  height: 800px;
-  height: 700px;
-}
->>>>>>> caf3734f711f08c8fe5e5ad4508e7f0a78940f5f
 
 /* === Footer Wrapper === */
 .footer-wrapper {
