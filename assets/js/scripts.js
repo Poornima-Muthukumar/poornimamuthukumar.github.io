@@ -230,7 +230,24 @@ jQuery(function ($) {
     }());
 
 
+	var message = "";
 
+	$("#sendMessage").on("click", function(e) {
+		
+		var $this = $(this);
+		message = $("#contactform").serialize();
+		$.ajax({
+			url: "//formspree.io/muthukumar.poornima@gmail.com", 
+			method: "POST",
+			data: {message: message},
+			dataType: "json"
+		});
+		
+		$this.before( '<div class="alert alert-success">Thank you! Your message has been sent.</div>' );
+        $this.find('input, textarea').val('');
+		return false;
+	});
+	
     // -------------------------------------------------------------
     // Vidio auto play
     // -------------------------------------------------------------
