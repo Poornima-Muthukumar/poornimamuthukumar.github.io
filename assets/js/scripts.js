@@ -34,9 +34,6 @@ jQuery(function ($) {
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
 
-
-
-
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
@@ -50,9 +47,11 @@ jQuery(function ($) {
             e.preventDefault();
         });
     }());
-
-
-
+    
+    $('#mapdiv').load(function() {
+         document.querySelectorAll('a[title="Interactive JavaScript maps"]')[0].style.visibility='hidden';   
+      });
+      
     // -------------------------------------------------------------
     // Full Screen Slider
     // -------------------------------------------------------------
@@ -327,7 +326,11 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
+<<<<<<< HEAD
         var myLatlng = new google.maps.LatLng(53.276994, -6.217080);
+=======
+        var myLatlng = new google.maps.LatLng(53.276679, -6.216981);
+>>>>>>> caf3734f711f08c8fe5e5ad4508e7f0a78940f5f
 
             var styles = [
                 {

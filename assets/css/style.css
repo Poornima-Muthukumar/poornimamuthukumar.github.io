@@ -1549,6 +1549,14 @@ Icon for all respective meta
     height: 350px;
 }
 
+<<<<<<< HEAD
+=======
+.resizable {
+  display: block;
+  height: 800px;
+  height: 700px;
+}
+>>>>>>> caf3734f711f08c8fe5e5ad4508e7f0a78940f5f
 
 /* === Footer Wrapper === */
 .footer-wrapper {
