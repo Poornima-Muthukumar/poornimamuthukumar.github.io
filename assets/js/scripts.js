@@ -34,6 +34,9 @@ jQuery(function ($) {
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
 
+
+
+
     // -------------------------------------------------------------
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
@@ -47,11 +50,9 @@ jQuery(function ($) {
             e.preventDefault();
         });
     }());
-    
-    $('#mapdiv').load(function() {
-         document.querySelectorAll('a[title="Interactive JavaScript maps"]')[0].style.visibility='hidden';   
-      });
-      
+
+
+
     // -------------------------------------------------------------
     // Full Screen Slider
     // -------------------------------------------------------------
@@ -286,51 +287,12 @@ jQuery(function ($) {
     }());
 
 
-
-    // -------------------------------------------------------------
-    // Contact Form
-    // -------------------------------------------------------------
-
-    $('#contactForm').on('submit',function(e){
-
-        e.preventDefault();
-
-        var $action = $(this).prop('action');
-        var $data = $(this).serialize();
-        var $this = $(this);
-
-        $this.prevAll('.alert').remove();
-
-        $.post( $action, $data, function( data ) {
-
-            if( data.response=='error' ){
-
-                $this.before( '<div class="alert alert-danger">'+data.message+'</div>' );
-            }
-
-            if( data.response=='success' ){
-
-                $this.before( '<div class="alert alert-success">'+data.message+'</div>' );
-                $this.find('input, textarea').val('');
-            }
-
-        }, "json");
-
-    });
-
-
-
-
     // -------------------------------------------------------------
     // Google Map
     // -------------------------------------------------------------
 
     (function () {
-<<<<<<< HEAD
         var myLatlng = new google.maps.LatLng(53.276994, -6.217080);
-=======
-        var myLatlng = new google.maps.LatLng(53.276679, -6.216981);
->>>>>>> caf3734f711f08c8fe5e5ad4508e7f0a78940f5f
 
             var styles = [
                 {
