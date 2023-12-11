@@ -886,6 +886,13 @@ Resume Timeline
     color: #fff;
 }
 
+.timeline>li .timeline-content-washington:hover {
+    position: relative;
+    background: url(../../assets/images/washington.jpg) bottom center no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
 .timeline>li .timeline-content-nus:hover {
     position: relative;
     background: url(../../assets/images/nus.png) bottom center no-repeat;
